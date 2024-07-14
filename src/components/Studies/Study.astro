@@ -1,0 +1,18 @@
+---
+const {title, time, description} = Astro.props
+---
+
+<a href="#" class="block w-full p-6">
+    <h5
+        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+    >
+        {title}
+    </h5>
+    <time
+        class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+        >{time}</time
+    >
+    <p class="font-normal text-gray-700 dark:text-gray-400">
+        {description}
+    </p>
+</a>
