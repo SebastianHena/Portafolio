@@ -1,9 +1,29 @@
 ---
-import ListExperience from "../components/Experience/ListExperience.astro"
+import ItemExperience from "../components/Experience/ItemExperience.astro"
 ---
 
-<section class="grid justify-star items-center w-[60%] mt-32">
-    <article>
-        <ListExperience/>
+<section class="grid justify-center justify-items-center items-center w-full gap-14">
+    <article class="w-full">
+        <h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white">
+            Experiencia y Conocimientos 
+        </h1>
+    </article>
+    <article class="w-full">
+        <h2 class="text-xl font-normal text-center text-gray-900 dark:text-white">
+            Tecnologías con las que he trabajado 
+        </h2>
+    </article>
+    <article class="grid grid-cols-4 justify-center justify-items-center  gap-16">
+        <ItemExperience svg="/imgs/html.png"/>
+        <ItemExperience svg="/imgs/css.png"/>
+        <ItemExperience svg="/imgs/js.png"/>
+        <ItemExperience svg="/imgs/piton.png"/>
+        <ItemExperience svg="/imgs/Node.png"/>
+        <ItemExperience svg="/svgs/react.svg"/>
+        <ItemExperience svg="/svgs/Astro.svg"/>
+        <ItemExperience svg="/svgs/Tailwind.svg"/>
+        <ItemExperience svg="/svgs/FastAPI.svg"/>
+        <ItemExperience svg="/imgs/MySql.png"/>
+        <ItemExperience svg="/svgs/github.svg"/>
     </article>
 </section>

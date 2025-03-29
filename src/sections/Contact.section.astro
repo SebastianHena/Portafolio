@@ -1,7 +1,26 @@
 ---
-import CardContact from "../components/Contact/CardContact.astro"
+import LinkContact from '../components/Contact/LinkContact.astro'
 ---
 
-<section class="flex justify-between items-center justify-items-center gap-6 mt-36 w-[40%]">
-    <CardContact/>
+<section
+    class="grid grid-col-1 justify-center justify-items-center items-center w-full gap-10"
+>
+<article class="text-center">
+    <h1 class="text-4xl font-bold mb-8">
+        ¡Pongámonos en contacto! 
+    </h1>
+    <h2 class="text-xl font-normal">
+        Si te interesa mi trabajo puedes contactarme por estos medios.
+    </h2>
+</article>
+<section>
+    <article class="grid grid-cols-4 gap-4">
+        <LinkContact svg="/svgs/message.svg" url="http://www.sebastianhenaovanegas2@gmail.com"/>
+        <LinkContact svg="/svgs/whatsApp.svg" url="https://wa.me/3147529717"/>
+        <LinkContact svg="/svgs/linkeding.svg" url="https://www.linkedin.com/in/sebastián-henao-vanegas-09885a24b"/>
+        <LinkContact svg="/svgs/github_lite.svg" url="https://www.linkedin.com/in/sebastián-henao-vanegas-09885a24b"/>
+    </article>
 </section>
+</section>
+
+

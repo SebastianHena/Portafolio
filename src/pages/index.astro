@@ -2,19 +2,23 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../sections/Header.section.astro';
 import Home from '../sections/Inicio.section.astro';
-import Studies from '../sections/Studies.section.astro';
+import About from '../sections/About.section.astro';
 import Experience from '../sections/Experience.section.astro'
+import Curriculum from '../sections/Curriculum.section.astro'
 import Projects from '../sections/Project.section.astro'
 import Contact from '../sections/Contact.section.astro'
+import Footer from '../sections/Footer.section.astro'
 ---
 
 <Layout title="Portafolio">
-	<main class="grid justify-center justify-items-center items-center text-white py-10 px-4">
+	<main class="grid justify-center justify-items-center items-center text-white w-full h-full gap-56">
 		<Header/>
 		<Home/>
-		<Studies/>
+		<About/>
 		<Experience/>
+		<Curriculum/>
 		<Projects/>
 		<Contact/>
+		<Footer/>
 	</main>
 </Layout>

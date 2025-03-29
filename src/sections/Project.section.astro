@@ -3,6 +3,15 @@ import CardProject from "../components/Projects/CardProject.astro"
 ---
 
 
-<section class="flex justify-between items-center justify-items-center gap-6 mt-36">
-    <CardProject img="UserFavicon.svg" title="Proyecto" description="Desccripcion del proyecto" gitHubUrl="www.github.com"/>
+<section class="grid justify-center items-center justify-items-center gap-20">
+    <article>
+        <h1 class="text-4xl font-bold text-center">
+            Proyectos 
+        </h1>
+    </article>
+    <article class="grid grid-cols-3 gap-10 mr-10 ml-10">
+    <CardProject img="/svgs/UserFavicon.svg" title="Proyecto" description="Desccripcion del proyecto" gitHubUrl="www.github.com"/>
+    <CardProject img="/svgs/UserFavicon.svg" title="Proyecto" description="Desccripcion del proyecto" gitHubUrl="www.github.com"/>
+    <CardProject img="/svgs/UserFavicon.svg" title="Proyecto" description="Desccripcion del proyecto" gitHubUrl="www.github.com"/>
+    </article>
 </section>
